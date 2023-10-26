@@ -14,6 +14,11 @@ body {
     overflow-x: hidden;
 }
 
+//media sizes
+
+$bp-desktop: 1440px;
+$bp-tablet: 768px;
+$bp-mobile: 375px;
 //Typography
 
 .heading-l {
@@ -21,6 +26,14 @@ body {
     font-size: 80px;
     line-height: 80px;
     margin: 0;
+    @media (max-width: $bp-tablet) {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    @media (max-width: $bp-mobile) {
+        font-size: 50px;
+        line-height: 50px;
+    }
 }
 .heading-m {
     font-family: "Fraunces";
@@ -33,14 +46,8 @@ body {
     line-height: 40px;
 }
 
-.body {
+body {
     font-family: "Manrope";
     font-size: 18px;
     line-height: 32px;
 }
-
-//media sizes
-
-$bp-desktop: 1440px;
-$bp-tablet: 768px;
-$bp-mobile: 375px;

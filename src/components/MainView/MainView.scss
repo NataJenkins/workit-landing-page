@@ -6,7 +6,7 @@
         padding: 60px;
         box-sizing: border-box;
         position: relative;
-        height: 473px;
+        height: 510px;
         .nav {
             display: flex;
             justify-content: space-between;
@@ -34,20 +34,56 @@
         }
     }
     .details {
-        height: 950px;
-        margin-top: -50px;
+        box-sizing: border-box;
+        position: relative;
+        padding: 0 165px;
         .image-container {
-            margin-top: 82px;
             img {
                 width: 715px;
             }
         }
+        .information-container {
+            margin-top: 100px;
+            display: flex;
+            gap: 26px;
+            color: $dark-purple;
+            &__element {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-number {
+                    height: 56px;
+                    width: 56px;
+                    font-family: "Fraunces";
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    border: 1px solid $dark-purple;
+                    margin-bottom: 56px;
+                }
+                &-title {
+                    margin-bottom: 28px;
+                }
+            }
+        }
     }
     .curve {
-        top: -500px;
+        top: 0;
         left: 0;
         z-index: -1;
-        height: 1260px;
+        height: 760px;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+    }
+    .curve-2 {
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 980px;
         position: absolute;
         object-fit: cover;
         width: 100%;
@@ -62,9 +98,7 @@
         top: 320px;
         right: -48px;
     }
-    @media (max-width: $bp-mobile) {
-        background-color: transparent;
-    }
+
     @media (max-width: $bp-tablet) {
         .header {
             padding: 40px;
@@ -76,10 +110,7 @@
             .title {
                 width: 470px;
                 margin-top: 58px;
-                .heading-l {
-                    font-size: 60px;
-                    line-height: 60px;
-                }
+
                 button {
                     transform: scale(0.855);
                 }
@@ -93,13 +124,7 @@
             }
         }
         .curve {
-            top: 0;
-            left: 0;
-            z-index: -1;
             height: 540px;
-            position: absolute;
-            object-fit: cover;
-            width: 100%;
         }
         .spiral-1 {
             position: absolute;
@@ -112,7 +137,28 @@
             right: -90px;
         }
     }
-    @media (max-width: $bp-desktop) {
-        background-color: transparent;
+    @media (max-width: $bp-mobile) {
+        .header {
+            padding: 37px 16px;
+            height: 340px;
+            .title {
+                width: 100%;
+                margin-top: 58px;
+            }
+        }
+        .details {
+            .image-container {
+                img {
+                    width: 298px;
+                }
+            }
+        }
+        .curve {
+            height: 460px;
+        }
+        .spiral-1,
+        .spiral-2 {
+            display: none;
+        }
     }
 }

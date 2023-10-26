@@ -35,4 +35,10 @@
             color: $eucaplyptus;
         }
     }
+    @media (max-width: $bp-mobile) {
+        transform: scale(0.855);
+        &.secondary {
+            transform: scale(0.915);
+        }
+    }
 }
