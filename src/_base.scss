@@ -5,6 +5,15 @@ $ghost-white: #fcf8ff;
 $white: #fff;
 $eucaplyptus: #44ffa1;
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 //Typography
 
 .heading-l {

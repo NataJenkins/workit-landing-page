@@ -1,10 +1,11 @@
 @import "../../_base.scss";
 
 .container {
-    padding: 60px;
-    box-sizing: border-box;
     width: 100vw;
     .header {
+        padding: 60px;
+        box-sizing: border-box;
+        position: relative;
         height: 473px;
         .nav {
             display: flex;
@@ -34,12 +35,11 @@
     }
     .details {
         height: 950px;
-        margin-top: -135px;
+        margin-top: -50px;
         .image-container {
             margin-top: 82px;
             img {
                 width: 715px;
-                // margin-left: 74px;
             }
         }
     }
@@ -47,7 +47,7 @@
         top: -500px;
         left: 0;
         z-index: -1;
-        height: 1236px;
+        height: 1260px;
         position: absolute;
         object-fit: cover;
         width: 100%;
@@ -65,10 +65,35 @@
     @media (max-width: $bp-mobile) {
         background-color: transparent;
     }
-    @media (max-width: $bp-desktop) {
-        background-color: transparent;
-    }
     @media (max-width: $bp-tablet) {
+        .details {
+            .image-container {
+                img {
+                    width: 480px;
+                }
+            }
+        }
+        .curve {
+            top: -500px;
+            left: 0;
+            z-index: -1;
+            height: 1236px;
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+        }
+        .spiral-1 {
+            position: absolute;
+            top: 160px;
+            left: -136px;
+        }
+        .spiral-2 {
+            position: absolute;
+            top: 320px;
+            right: -48px;
+        }
+    }
+    @media (max-width: $bp-desktop) {
         background-color: transparent;
     }
 }
