@@ -35,43 +35,50 @@ export default function MainView() {
                         <div className="information-container__element-number">
                             1
                         </div>
-                        <div className="information-container__element-title heading-s">
-                            Actionable insights
-                        </div>
-                        <div className="information-container__element-description">
-                            Optimize your products, improve customer
-                            satisfaction and stay ahead of the competition with
-                            our product data analytics.
+                        <div className="content">
+                            <div className="information-container__element-title heading-s">
+                                Actionable insights
+                            </div>
+                            <div className="information-container__element-description">
+                                Optimize your products, improve customer
+                                satisfaction and stay ahead of the competition
+                                with our product data analytics.
+                            </div>
                         </div>
                     </div>
                     <div className="information-container__element">
                         <div className="information-container__element-number">
                             2
                         </div>
-                        <div className="information-container__element-title heading-s">
-                            Data-driven decisions
-                        </div>
-                        <div className="information-container__element-description">
-                            Make data-driven decisions with our product data
-                            analytics. Our AI-generated reports help you unlock
-                            insights hidden in your product data.
+                        <div className="content">
+                            <div className="information-container__element-title heading-s">
+                                Data-driven decisions
+                            </div>
+                            <div className="information-container__element-description">
+                                Make data-driven decisions with our product data
+                                analytics. Our AI-generated reports help you
+                                unlock insights hidden in your product data.
+                            </div>
                         </div>
                     </div>
                     <div className="information-container__element">
                         <div className="information-container__element-number">
                             3
                         </div>
-                        <div className="information-container__element-title heading-s">
-                            Always affordable
-                        </div>
-                        <div className="information-container__element-description">
-                            Always affordable pricing that scales with your
-                            business. Get top-quality product data analytics
-                            services without hidden costs or unexpected fees.
+                        <div className="content">
+                            <div className="information-container__element-title heading-s">
+                                Always affordable
+                            </div>
+                            <div className="information-container__element-description">
+                                Always affordable pricing that scales with your
+                                business. Get top-quality product data analytics
+                                services without hidden costs or unexpected
+                                fees.
+                            </div>
                         </div>
                     </div>
                 </div>
-                <img src={LightPurpleBg} alt="bg" className="curve-2" />
+                <img src={DarkPurpleBg} alt="bg" className="curve-2" />
             </section>
         </div>
     );

@@ -82,7 +82,7 @@
         opacity: 0.5;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: -2;
         height: 980px;
         position: absolute;
         object-fit: cover;
@@ -117,14 +117,40 @@
             }
         }
         .details {
+            padding: 0 90px;
             .image-container {
                 img {
                     width: 480px;
                 }
             }
+            .information-container {
+                margin-top: 65px;
+                flex-direction: column;
+                gap: 48px;
+                &__element {
+                    display: flex;
+                    flex-direction: row;
+                    .content {
+                        text-align: initial;
+                    }
+                    &-number {
+                        height: 48px;
+                        width: 48px;
+                        font-size: 20px;
+                        margin: 0 32px 0 0;
+                        flex-shrink: 0;
+                    }
+                    &-title {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
         }
         .curve {
             height: 540px;
+        }
+        .curve-2 {
+            height: 930px;
         }
         .spiral-1 {
             position: absolute;
