@@ -78,7 +78,7 @@ export default function MainView() {
                         </div>
                     </div>
                 </div>
-                <img src={DarkPurpleBg} alt="bg" className="curve-2" />
+                <img src={LightPurpleBg} alt="bg" className="curve-2" />
             </section>
         </div>
     );

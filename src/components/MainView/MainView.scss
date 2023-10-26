@@ -79,7 +79,6 @@
         width: 100%;
     }
     .curve-2 {
-        opacity: 0.5;
         top: 0;
         left: 0;
         z-index: -2;
@@ -173,14 +172,33 @@
             }
         }
         .details {
+            padding: 0 16px;
             .image-container {
                 img {
                     width: 298px;
                 }
             }
+            .information-container {
+                margin-top: 65px;
+                flex-direction: column;
+                gap: 40px;
+                &__element {
+                    display: flex;
+                    flex-direction: column;
+                    .content {
+                        text-align: center;
+                    }
+                    &-number {
+                        margin: 0 0 24px 0;
+                    }
+                }
+            }
         }
         .curve {
             height: 460px;
+        }
+        .curve-2 {
+            height: 1080px;
         }
         .spiral-1,
         .spiral-2 {
