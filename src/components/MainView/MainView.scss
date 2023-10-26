@@ -1,0 +1,74 @@
+@import "../../_base.scss";
+
+.container {
+    padding: 60px;
+    box-sizing: border-box;
+    width: 100vw;
+    .header {
+        height: 473px;
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 100px;
+        }
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 635px;
+            color: $white;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 86px;
+
+            span {
+                text-decoration: underline;
+                text-underline-offset: 8px;
+                text-decoration-thickness: 3px;
+                text-decoration-color: $eucaplyptus;
+            }
+            button {
+                margin-top: 37px;
+            }
+        }
+    }
+    .details {
+        height: 950px;
+        margin-top: -135px;
+        .image-container {
+            margin-top: 82px;
+            img {
+                width: 715px;
+                // margin-left: 74px;
+            }
+        }
+    }
+    .curve {
+        top: -500px;
+        left: 0;
+        z-index: -1;
+        height: 1236px;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+    }
+    .spiral-1 {
+        position: absolute;
+        top: 160px;
+        left: -136px;
+    }
+    .spiral-2 {
+        position: absolute;
+        top: 320px;
+        right: -48px;
+    }
+    @media (max-width: $bp-mobile) {
+        background-color: transparent;
+    }
+    @media (max-width: $bp-desktop) {
+        background-color: transparent;
+    }
+    @media (max-width: $bp-tablet) {
+        background-color: transparent;
+    }
+}
