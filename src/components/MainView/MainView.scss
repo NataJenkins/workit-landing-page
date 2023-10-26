@@ -66,6 +66,25 @@
         background-color: transparent;
     }
     @media (max-width: $bp-tablet) {
+        .header {
+            padding: 40px;
+            height: 370px;
+
+            .nav {
+                padding: 0;
+            }
+            .title {
+                width: 470px;
+                margin-top: 58px;
+                .heading-l {
+                    font-size: 60px;
+                    line-height: 60px;
+                }
+                button {
+                    transform: scale(0.855);
+                }
+            }
+        }
         .details {
             .image-container {
                 img {
@@ -74,23 +93,23 @@
             }
         }
         .curve {
-            top: -500px;
+            top: 0;
             left: 0;
             z-index: -1;
-            height: 1236px;
+            height: 540px;
             position: absolute;
             object-fit: cover;
             width: 100%;
         }
         .spiral-1 {
             position: absolute;
-            top: 160px;
-            left: -136px;
+            top: 70px;
+            left: -223px;
         }
         .spiral-2 {
             position: absolute;
-            top: 320px;
-            right: -48px;
+            top: 260px;
+            right: -90px;
         }
     }
     @media (max-width: $bp-desktop) {

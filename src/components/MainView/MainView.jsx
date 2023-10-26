@@ -17,7 +17,7 @@ export default function MainView() {
                 </nav>
                 <div className="title">
                     <h1 className="heading-l">
-                        Data <span>tailored</span> to your needs
+                        Data <span>tailored</span> to your needs.
                     </h1>
                     <Button text="Learn more" />
                 </div>
