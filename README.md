@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/NataJenkins/workit-landing-page)
--   Live Site URL: [Add live site URL here](https://ornate-pasca-528a82.netlify.app)
+-   Solution URL: [Link](https://github.com/NataJenkins/workit-landing-page)
+-   Live Site URL: [Link](https://ornate-pasca-528a82.netlify.app)
 
 ## My process
 
