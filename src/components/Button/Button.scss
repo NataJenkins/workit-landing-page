@@ -4,7 +4,7 @@
     box-sizing: border-box;
     border: none;
     height: 61px;
-    width: auto;
+    width: fit-content;
     background-color: $eucaplyptus;
     color: $dark-purple;
     font-family: Manrope;
@@ -19,6 +19,7 @@
         color: $eucaplyptus;
         background-color: $dark-purple;
         border: 2px solid $eucaplyptus;
+        width: fit-content;
     }
 
     &.secondary {

@@ -1,11 +1,17 @@
 import React from "react";
 import ImageHero from "../../assets/images/image-hero.webp";
 import LogoLight from "../../assets/images/logo-light.svg";
+import LogoDark from "../../assets/images/logo-dark.svg";
 import DarkPurpleBg from "../../assets/images/bg-image-dark-purple.svg";
 import LightPurpleBg from "../../assets/images/bg-image-light.svg";
 import BgPattern1 from "../../assets/images/bg-pattern-1.svg";
 import BgPattern2 from "../../assets/images/bg-pattern-2.svg";
+import BgPattern3 from "../../assets/images/bg-pattern-3.svg";
+import Founder from "../../assets/images/image-founder.webp";
 import Button from "../Button/Button";
+import FbIcon from "../../assets/images/icon-facebook";
+import TwitterIcon from "../../assets/images/icon-twitter";
+import InstagramIcon from "../../assets/images/icon-instagram";
 import "./MainView.scss";
 
 export default function MainView() {
@@ -79,6 +85,47 @@ export default function MainView() {
                     </div>
                 </div>
                 <img src={LightPurpleBg} alt="bg" className="curve-2" />
+            </section>
+            <section className="founder-section">
+                <div className="container">
+                    <div className="apply">
+                        <img src={Founder} alt="pic" className="img" />
+                        <div className="card">
+                            <div className="title heading-m ">
+                                Be the first to test
+                            </div>
+                            <div className="description">
+                                Hi, I'm Louis Graham, the founder of the
+                                company. Book a demo call with me to become a
+                                beta tester for our app and kickstart your
+                                company. Apply for access below and I’ll be in
+                                touch to schedule a call.
+                            </div>
+                            <Button text="Apply for Access" />
+                            <img
+                                src={BgPattern3}
+                                alt="logo"
+                                className="spiral-3"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <footer className="footer">
+                    <div className="content">
+                        <img src={LogoDark} alt="logo" />
+                        <div className="icons">
+                            <a className="icon" href="#">
+                                <FbIcon />
+                            </a>
+                            <a className="icon" href="#">
+                                <TwitterIcon />
+                            </a>
+                            <a className="icon" href="#">
+                                <InstagramIcon />
+                            </a>
+                        </div>
+                    </div>
+                </footer>
             </section>
         </div>
     );

@@ -37,6 +37,7 @@
         box-sizing: border-box;
         position: relative;
         padding: 0 165px;
+        height: 980px;
         .image-container {
             img {
                 width: 715px;
@@ -69,6 +70,61 @@
             }
         }
     }
+
+    .founder-section {
+        margin: 110px 0;
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .apply {
+            position: relative;
+            display: flex;
+            .img {
+                width: 477px;
+                height: 477px;
+                z-index: 1;
+            }
+            .card {
+                box-sizing: border-box;
+                position: relative;
+                padding: 65px;
+                width: 730px;
+                height: 413px;
+                color: white;
+                background-color: $dark-purple;
+                text-align: initial;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                z-index: 2;
+                margin-top: 175px;
+                margin-left: -90px;
+            }
+        }
+        .footer {
+            margin-top: 120px;
+            height: 102px;
+            display: flex;
+            justify-content: center;
+            .content {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                .icons {
+                    display: flex;
+                    justify-content: space-between;
+                    .icon:hover {
+                        svg {
+                            path {
+                                fill: $dark-purple;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .curve {
         top: 0;
         left: 0;
@@ -96,6 +152,12 @@
         position: absolute;
         top: 320px;
         right: -48px;
+    }
+    .spiral-3 {
+        position: absolute;
+        top: 271px;
+        right: 20px;
+        height: 200px;
     }
 
     @media (max-width: $bp-tablet) {
