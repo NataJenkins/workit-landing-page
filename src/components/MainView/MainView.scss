@@ -37,7 +37,7 @@
         box-sizing: border-box;
         position: relative;
         padding: 0 165px;
-        height: 980px;
+
         .image-container {
             img {
                 width: 715px;
@@ -273,6 +273,32 @@
                 }
             }
         }
+        .founder-section {
+            margin: 110px 0;
+            box-sizing: border-box;
+            .container {
+                box-sizing: border-box;
+                padding: 16px;
+            }
+            .apply {
+                display: block;
+                .img {
+                    width: 281px;
+                    height: 281px;
+                    z-index: 1;
+                }
+                .card {
+                    padding: 31px;
+                    width: 100%;
+                    text-align: center;
+                    margin: 0;
+                    margin-top: -60px;
+                }
+            }
+            .footer {
+                margin-top: 74px;
+            }
+        }
         .curve {
             height: 460px;
         }
@@ -280,7 +306,8 @@
             height: 1080px;
         }
         .spiral-1,
-        .spiral-2 {
+        .spiral-2,
+        .spiral-3 {
             display: none;
         }
     }
