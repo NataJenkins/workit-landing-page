@@ -207,6 +207,23 @@
                 }
             }
         }
+        .founder-section {
+            margin: 100px 0;
+            .apply {
+                .img {
+                    width: 281px;
+                    height: 281px;
+                    z-index: 1;
+                }
+                .card {
+                    padding: 48px 56px;
+                    width: 514px;
+                    height: 375px;
+                    margin-top: 149px;
+                    margin-left: -108px;
+                }
+            }
+        }
         .curve {
             height: 540px;
         }
