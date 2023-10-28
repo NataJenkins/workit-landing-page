@@ -114,13 +114,13 @@ export default function MainView() {
                     <div className="content">
                         <img src={LogoDark} alt="logo" />
                         <div className="icons">
-                            <a className="icon" href="/">
+                            <a className="icon" href="/" aria-label="facebook">
                                 <FbIcon />
                             </a>
-                            <a className="icon" href="/">
+                            <a className="icon" href="/" aria-label="twitter">
                                 <TwitterIcon />
                             </a>
-                            <a className="icon" href="/">
+                            <a className="icon" href="/" aria-label="instagram">
                                 <InstagramIcon />
                             </a>
                         </div>
