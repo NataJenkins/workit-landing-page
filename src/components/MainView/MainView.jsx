@@ -42,9 +42,9 @@ export default function MainView() {
                             1
                         </div>
                         <div className="content">
-                            <div className="information-container__element-title heading-s">
+                            <h3 className="information-container__element-title heading-s">
                                 Actionable insights
-                            </div>
+                            </h3>
                             <div className="information-container__element-description">
                                 Optimize your products, improve customer
                                 satisfaction and stay ahead of the competition
@@ -57,9 +57,9 @@ export default function MainView() {
                             2
                         </div>
                         <div className="content">
-                            <div className="information-container__element-title heading-s">
+                            <h3 className="information-container__element-title heading-s">
                                 Data-driven decisions
-                            </div>
+                            </h3>
                             <div className="information-container__element-description">
                                 Make data-driven decisions with our product data
                                 analytics. Our AI-generated reports help you
@@ -72,9 +72,9 @@ export default function MainView() {
                             3
                         </div>
                         <div className="content">
-                            <div className="information-container__element-title heading-s">
+                            <h3 className="information-container__element-title heading-s">
                                 Always affordable
-                            </div>
+                            </h3>
                             <div className="information-container__element-description">
                                 Always affordable pricing that scales with your
                                 business. Get top-quality product data analytics
@@ -91,9 +91,9 @@ export default function MainView() {
                     <div className="apply">
                         <img src={Founder} alt="pic" className="img" />
                         <div className="card">
-                            <div className="title heading-m ">
+                            <h2 className="title heading-m ">
                                 Be the first to test
-                            </div>
+                            </h2>
                             <div className="description">
                                 Hi, I'm Louis Graham, the founder of the
                                 company. Book a demo call with me to become a
