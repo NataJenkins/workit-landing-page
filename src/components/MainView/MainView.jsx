@@ -32,101 +32,116 @@ export default function MainView() {
                 <img src={BgPattern1} alt="logo" className="spiral-1" />
                 <img src={BgPattern2} alt="logo" className="spiral-2" />
             </header>
-            <section className="details">
-                <div className="image-container">
-                    <img src={ImageHero} alt="hero" />
-                </div>
-                <div className="information-container">
-                    <div className="information-container__element">
-                        <div className="information-container__element-number">
-                            1
+            <main>
+                <section className="details">
+                    <div className="image-container">
+                        <img src={ImageHero} alt="hero" />
+                    </div>
+                    <div className="information-container">
+                        <div className="information-container__element">
+                            <div className="information-container__element-number">
+                                1
+                            </div>
+                            <div className="content">
+                                <h2 className="information-container__element-title heading-s">
+                                    Actionable insights
+                                </h2>
+                                <div className="information-container__element-description">
+                                    Optimize your products, improve customer
+                                    satisfaction and stay ahead of the
+                                    competition with our product data analytics.
+                                </div>
+                            </div>
                         </div>
+                        <div className="information-container__element">
+                            <div className="information-container__element-number">
+                                2
+                            </div>
+                            <div className="content">
+                                <h2 className="information-container__element-title heading-s">
+                                    Data-driven decisions
+                                </h2>
+                                <div className="information-container__element-description">
+                                    Make data-driven decisions with our product
+                                    data analytics. Our AI-generated reports
+                                    help you unlock insights hidden in your
+                                    product data.
+                                </div>
+                            </div>
+                        </div>
+                        <div className="information-container__element">
+                            <div className="information-container__element-number">
+                                3
+                            </div>
+                            <div className="content">
+                                <h2 className="information-container__element-title heading-s">
+                                    Always affordable
+                                </h2>
+                                <div className="information-container__element-description">
+                                    Always affordable pricing that scales with
+                                    your business. Get top-quality product data
+                                    analytics services without hidden costs or
+                                    unexpected fees.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src={LightPurpleBg} alt="bg" className="curve-2" />
+                </section>
+                <section className="founder-section">
+                    <div className="container">
+                        <div className="apply">
+                            <img src={Founder} alt="pic" className="img" />
+                            <div className="card">
+                                <h2 className="title heading-m ">
+                                    Be the first to test
+                                </h2>
+                                <div className="description">
+                                    Hi, I'm Louis Graham, the founder of the
+                                    company. Book a demo call with me to become
+                                    a beta tester for our app and kickstart your
+                                    company. Apply for access below and I’ll be
+                                    in touch to schedule a call.
+                                </div>
+                                <Button text="Apply for Access" />
+                                <img
+                                    src={BgPattern3}
+                                    alt="logo"
+                                    className="spiral-3"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <footer className="footer">
                         <div className="content">
-                            <h3 className="information-container__element-title heading-s">
-                                Actionable insights
-                            </h3>
-                            <div className="information-container__element-description">
-                                Optimize your products, improve customer
-                                satisfaction and stay ahead of the competition
-                                with our product data analytics.
+                            <img src={LogoDark} alt="logo" />
+                            <div className="icons">
+                                <a
+                                    className="icon"
+                                    href="/"
+                                    aria-label="facebook"
+                                >
+                                    <FbIcon />
+                                </a>
+                                <a
+                                    className="icon"
+                                    href="/"
+                                    aria-label="twitter"
+                                >
+                                    <TwitterIcon />
+                                </a>
+                                <a
+                                    className="icon"
+                                    href="/"
+                                    aria-label="instagram"
+                                >
+                                    <InstagramIcon />
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div className="information-container__element">
-                        <div className="information-container__element-number">
-                            2
-                        </div>
-                        <div className="content">
-                            <h3 className="information-container__element-title heading-s">
-                                Data-driven decisions
-                            </h3>
-                            <div className="information-container__element-description">
-                                Make data-driven decisions with our product data
-                                analytics. Our AI-generated reports help you
-                                unlock insights hidden in your product data.
-                            </div>
-                        </div>
-                    </div>
-                    <div className="information-container__element">
-                        <div className="information-container__element-number">
-                            3
-                        </div>
-                        <div className="content">
-                            <h3 className="information-container__element-title heading-s">
-                                Always affordable
-                            </h3>
-                            <div className="information-container__element-description">
-                                Always affordable pricing that scales with your
-                                business. Get top-quality product data analytics
-                                services without hidden costs or unexpected
-                                fees.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img src={LightPurpleBg} alt="bg" className="curve-2" />
-            </section>
-            <section className="founder-section">
-                <div className="container">
-                    <div className="apply">
-                        <img src={Founder} alt="pic" className="img" />
-                        <div className="card">
-                            <h2 className="title heading-m ">
-                                Be the first to test
-                            </h2>
-                            <div className="description">
-                                Hi, I'm Louis Graham, the founder of the
-                                company. Book a demo call with me to become a
-                                beta tester for our app and kickstart your
-                                company. Apply for access below and I’ll be in
-                                touch to schedule a call.
-                            </div>
-                            <Button text="Apply for Access" />
-                            <img
-                                src={BgPattern3}
-                                alt="logo"
-                                className="spiral-3"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <footer className="footer">
-                    <div className="content">
-                        <img src={LogoDark} alt="logo" />
-                        <div className="icons">
-                            <a className="icon" href="/" aria-label="facebook">
-                                <FbIcon />
-                            </a>
-                            <a className="icon" href="/" aria-label="twitter">
-                                <TwitterIcon />
-                            </a>
-                            <a className="icon" href="/" aria-label="instagram">
-                                <InstagramIcon />
-                            </a>
-                        </div>
-                    </div>
-                </footer>
-            </section>
+                    </footer>
+                </section>
+            </main>
         </div>
     );
 }
