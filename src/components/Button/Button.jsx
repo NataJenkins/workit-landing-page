@@ -1,12 +1,13 @@
 import React from "react";
 import "./Button.scss";
-export default function Button({ secondary, onClick, text }) {
+export default function Button({ secondary, onClick, text, href }) {
     return (
-        <button
+        <a
             className={`button ${secondary ? "secondary" : null}`}
             onClick={onClick}
+            href={href}
         >
             {text}
-        </button>
+        </a>
     );
 }

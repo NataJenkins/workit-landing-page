@@ -19,21 +19,27 @@ export default function MainView() {
         <div className="container">
             <header className="header">
                 <nav className="nav">
-                    <img src={LogoLight} alt="logo" />
-                    <Button secondary text="Apply for Access" />
+                    <a href="/">
+                        <img src={LogoLight} alt="" />
+                    </a>
+                    <Button
+                        secondary
+                        text="Apply for Access"
+                        href="#apply-for-access"
+                    />
                 </nav>
                 <div className="title">
                     <h1 className="heading-l">
                         Data <span>tailored</span> to your needs.
                     </h1>
-                    <Button text="Learn more" />
+                    <Button text="Learn more" href="#details" />
                 </div>
-                <img src={DarkPurpleBg} alt="logo" className="curve" />
-                <img src={BgPattern1} alt="logo" className="spiral-1" />
-                <img src={BgPattern2} alt="logo" className="spiral-2" />
+                <img src={DarkPurpleBg} alt="" className="curve" />
+                <img src={BgPattern1} alt="" className="spiral-1" />
+                <img src={BgPattern2} alt="" className="spiral-2" />
             </header>
             <main>
-                <section className="details">
+                <section className="details" id="details">
                     <div className="image-container">
                         <img src={ImageHero} alt="hero" />
                     </div>
@@ -46,11 +52,11 @@ export default function MainView() {
                                 <h2 className="information-container__element-title heading-s">
                                     Actionable insights
                                 </h2>
-                                <div className="information-container__element-description">
+                                <p className="information-container__element-description">
                                     Optimize your products, improve customer
                                     satisfaction and stay ahead of the
                                     competition with our product data analytics.
-                                </div>
+                                </p>
                             </div>
                         </div>
                         <div className="information-container__element">
@@ -86,12 +92,12 @@ export default function MainView() {
                             </div>
                         </div>
                     </div>
-                    <img src={LightPurpleBg} alt="bg" className="curve-2" />
+                    <img src={LightPurpleBg} alt="" className="curve-2" />
                 </section>
-                <section className="founder-section">
+                <section className="founder-section" id="apply-for-access">
                     <div className="container">
                         <div className="apply">
-                            <img src={Founder} alt="pic" className="img" />
+                            <img src={Founder} alt="" className="img" />
                             <div className="card">
                                 <h2 className="title heading-m ">
                                     Be the first to test
@@ -103,10 +109,15 @@ export default function MainView() {
                                     company. Apply for access below and I’ll be
                                     in touch to schedule a call.
                                 </div>
-                                <Button text="Apply for Access" />
+                                <div className="button-container">
+                                    <Button
+                                        text="Apply for Access"
+                                        href="#apply-for-access"
+                                    />
+                                </div>
                                 <img
                                     src={BgPattern3}
-                                    alt="logo"
+                                    alt=""
                                     className="spiral-3"
                                 />
                             </div>
@@ -114,7 +125,7 @@ export default function MainView() {
                     </div>
                     <footer className="footer">
                         <div className="content">
-                            <img src={LogoDark} alt="logo" />
+                            <img src={LogoDark} alt="" />
                             <div className="icons">
                                 <a
                                     className="icon"
